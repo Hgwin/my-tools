@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mes Outils</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0e0e0e;
+    --surface: #161616;
+    --border: #2a2a2a;
+    --accent: #f97316;
+    --text: #e8e8e8;
+    --muted: #666;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  header {
+    margin-bottom: 3rem;
+  }
+
+  .label {
+    font-size: 0.7rem;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+    background: #1e1e1e;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+
+  .info { flex: 1; }
+
+  .name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .desc {
+    font-size: 0.72rem;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+
+  .dl-btn {
+    background: var(--accent);
+    color: #000;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    transition: opacity 0.2s;
+  }
+
+  .dl-btn:hover { opacity: 0.85; }
+
+  footer {
+    margin-top: 3rem;
+    font-size: 0.65rem;
+    color: var(--muted);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <p class="label">Hugo / MBE Charleroi</p>
+    <h1>Mes Outils</h1>
+  </header>
+
+  <div class="list">
+
+    <!-- CARTE 1 — Remplace : NOM_APP_1, DESCRIPTION_1, NOM_DU_FICHIER_1.exe -->
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <div class="info">
+        <div class="name">NOM_APP_1</div>
+        <div class="desc">DESCRIPTION_1</div>
+      </div>
+      <a class="dl-btn" href="NOM_DU_FICHIER_1.exe" download>↓ Télécharger</a>
+    </div>
+
+    <!-- CARTE 2 — Remplace : NOM_APP_2, DESCRIPTION_2, NOM_DU_FICHIER_2.exe -->
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <div class="info">
+        <div class="name">NOM_APP_2</div>
+        <div class="desc">DESCRIPTION_2</div>
+      </div>
+      <a class="dl-btn" href="NOM_DU_FICHIER_2.exe" download>↓ Télécharger</a>
+    </div>
+
+    <!-- CARTE 3 — Remplace : NOM_APP_3, DESCRIPTION_3, NOM_DU_FICHIER_3.exe -->
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <div class="info">
+        <div class="name">NOM_APP_3</div>
+        <div class="desc">DESCRIPTION_3</div>
+      </div>
+      <a class="dl-btn" href="NOM_DU_FICHIER_3.exe" download>↓ Télécharger</a>
+    </div>
+
+    <!-- CARTE 4 — Remplace : NOM_APP_4, DESCRIPTION_4, NOM_DU_FICHIER_4.exe -->
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <div class="info">
+        <div class="name">NOM_APP_4</div>
+        <div class="desc">DESCRIPTION_4</div>
+      </div>
+      <a class="dl-btn" href="NOM_DU_FICHIER_4.exe" download>↓ Télécharger</a>
+    </div>
+
+    <!-- CARTE 5 — Remplace : NOM_APP_5, DESCRIPTION_5, NOM_DU_FICHIER_5.exe -->
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <div class="info">
+        <div class="name">NOM_APP_5</div>
+        <div class="desc">DESCRIPTION_5</div>
+      </div>
+      <a class="dl-btn" href="NOM_DU_FICHIER_5.exe" download>↓ Télécharger</a>
+    </div>
+
+    <!-- CARTE 6 — Remplace : NOM_APP_6, DESCRIPTION_6, NOM_DU_FICHIER_6.exe -->
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <div class="info">
+        <div class="name">NOM_APP_6</div>
+        <div class="desc">DESCRIPTION_6</div>
+      </div>
+      <a class="dl-btn" href="NOM_DU_FICHIER_6.exe" download>↓ Télécharger</a>
+    </div>
+
+    <!-- CARTE 7 — Remplace : NOM_APP_7, DESCRIPTION_7, NOM_DU_FICHIER_7.exe -->
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <div class="info">
+        <div class="name">NOM_APP_7</div>
+        <div class="desc">DESCRIPTION_7</div>
+      </div>
+      <a class="dl-btn" href="NOM_DU_FICHIER_7.exe" download>↓ Télécharger</a>
+    </div>
+
+    <!-- CARTE 8 — Remplace : NOM_APP_8, DESCRIPTION_8, NOM_DU_FICHIER_8.exe -->
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <div class="info">
+        <div class="name">NOM_APP_8</div>
+        <div class="desc">DESCRIPTION_8</div>
+      </div>
+      <a class="dl-btn" href="NOM_DU_FICHIER_8.exe" download>↓ Télécharger</a>
+    </div>
+
+    <!-- CARTE 9 — Remplace : NOM_APP_9, DESCRIPTION_9, NOM_DU_FICHIER_9.exe -->
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <div class="info">
+        <div class="name">NOM_APP_9</div>
+        <div class="desc">DESCRIPTION_9</div>
+      </div>
+      <a class="dl-btn" href="NOM_DU_FICHIER_9.exe" download>↓ Télécharger</a>
+    </div>
+
+    <!-- CARTE 10 — Remplace : NOM_APP_10, DESCRIPTION_10, NOM_DU_FICHIER_10.exe -->
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <div class="info">
+        <div class="name">NOM_APP_10</div>
+        <div class="desc">DESCRIPTION_10</div>
+      </div>
+      <a class="dl-btn" href="NOM_DU_FICHIER_10.exe" download>↓ Télécharger</a>
+    </div>
+
+  </div>
+
+  <footer>Mes fichiers · <span id="date"></span></footer>
+</div>
+<script>
+  document.getElementById('date').textContent = new Date().toLocaleDateString('fr-BE');
+</script>
+</body>
+</html>
